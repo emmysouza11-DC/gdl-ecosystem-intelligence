@@ -1,0 +1,29 @@
+# GDL Ecosystem Intelligence — Dependencias
+# Instalar con: pip install -r requirements.txt
+
+# Manipulación de datos
+pandas==2.2.2
+numpy==1.26.4
+openpyxl==3.1.2
+
+# Visualización
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+
+# Jupyter
+jupyter==1.0.0
+notebook==7.2.0
+ipykernel==6.29.4
+
+# HTTP y descarga de datos
+requests==2.32.3
+httpx==0.27.0
+
+# Geoespacial (mapas ZMG)
+geopandas==0.14.4
+folium==0.16.0
+
+# Utilidades
+python-dotenv==1.0.1
+tqdm==4.66.4
