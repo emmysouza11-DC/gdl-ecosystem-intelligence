@@ -30,6 +30,9 @@ data/processed/**/*.parquet
 !data/external/.gitkeep
 !reports/figures/.gitkeep
 
+# Excepciones: datos de referencia versionados
+!data/raw/vivienda/shf_indice_zmg.csv
+
 # Power BI
 *.pbix
 
