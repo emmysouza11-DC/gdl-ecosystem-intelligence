@@ -1,0 +1,43 @@
+# Entorno virtual
+venv/
+.env
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Datos crudos (archivos pesados - nunca subir)
+data/raw/**/*.csv
+data/raw/**/*.xlsx
+data/raw/**/*.json
+data/raw/**/*.zip
+data/processed/**/*.csv
+data/processed/**/*.parquet
+
+# Mantener estructura de carpetas
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+!reports/figures/.gitkeep
+
+# Power BI
+*.pbix
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
