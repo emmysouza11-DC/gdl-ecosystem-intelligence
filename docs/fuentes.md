@@ -120,6 +120,22 @@ Documentación de cada fuente utilizada: URL de acceso, variables clave, períod
 - SHF publica el Índice SHF de Precios de la Vivienda por estado
 - Complementar con datos scrapeados de portales (Inmuebles24, Lamudi) si se requiere nivel colonia
 
+### 4.1 Índice SHF de Precios de la Vivienda — ZMG
+
+**Archivo:** `data/raw/vivienda/shf_indice_zmg.csv`  
+**Frecuencia:** Trimestral  
+**Base:** 2017 = 100  
+**Período:** 2023 T1 — 2025 T2  
+
+| Columna | Descripción |
+|---|---|
+| `trimestre` | Período (formato YYYY-TQ) |
+| `indice_shf` | Valor del índice (base 2017 = 100) |
+| `variacion_anual_pct` | Variación porcentual respecto al mismo trimestre del año anterior |
+| `fuente` | Boletín oficial SHF de referencia |
+
+**Nota:** Serie construida desde boletines oficiales SHF publicados en gob.mx/shf. Los valores del índice para T1–T3 2023 y T2–T3 2024 son interpolados linealmente entre puntos confirmados. Las variaciones anuales son cifras oficiales SHF.
+
 ---
 
 ## 5. Egresados de educación superior — ANUIES
