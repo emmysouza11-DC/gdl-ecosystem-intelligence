@@ -20,10 +20,10 @@ GRIS_CLARO = colors.HexColor("#F5F5F5")
 def build_styles():
     styles = getSampleStyleSheet()
     custom = {
-        "titulo": ParagraphStyle("titulo", fontSize=16, textColor=AZUL_MARINO,
-                                  alignment=TA_CENTER, spaceAfter=2, fontName="Helvetica-Bold"),
+        "titulo": ParagraphStyle("titulo", fontSize=15, textColor=AZUL_MARINO,
+                                  alignment=TA_CENTER, spaceAfter=6, leading = 20, fontName="Helvetica-Bold"),
         "subtitulo": ParagraphStyle("subtitulo", fontSize=10, textColor=AZUL_CLARO,
-                                     alignment=TA_CENTER, spaceAfter=4, fontName="Helvetica"),
+                                     alignment=TA_CENTER, spaceAfter=6,leading = 14, fontName="Helvetica"),
         "seccion": ParagraphStyle("seccion", fontSize=11, textColor=AZUL_MARINO,
                                    spaceBefore=12, spaceAfter=4, fontName="Helvetica-Bold"),
         "body": ParagraphStyle("body", fontSize=9, textColor=colors.black,
@@ -95,7 +95,7 @@ def generate():
     styles = build_styles()
     doc = SimpleDocTemplate(OUTPUT_PATH, pagesize=A4,
                              leftMargin=2*cm, rightMargin=2*cm,
-                             topMargin=1.5*cm, bottomMargin=1.5*cm)
+                             topMargin=1.2*cm, bottomMargin=1.2*cm)
     story = []
 
     # PÁGINA 1
@@ -167,7 +167,7 @@ def generate():
         "de la zona metropolitana.",
         styles["conclusion"]))
 
-    story.append(Spacer(1, 0.5*cm))
+    story.append(Spacer(1, 2*cm))
     story.append(HRFlowable(width="100%", thickness=1, color=GRIS, spaceAfter=8))
     story.append(Paragraph(
         "Proyecto de portafolio profesional en Data Science · Datos públicos · Uso educativo y de investigación",
