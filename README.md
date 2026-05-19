@@ -115,7 +115,7 @@ Cada notebook corre de principio a fin con un solo **Run All**.
 | Fuente | Dataset | Acceso |
 |---|---|---|
 | INEGI — ENOE | Encuesta Nacional de Ocupación y Empleo | [inegi.org.mx](https://www.inegi.org.mx) |
-| INEGI — DENUE | Directorio Estadístico Nacional de Unidades Económicas | API pública |
+| INEGI — DENUE | Directorio Estadístico Nacional de Unidades Económicas | [Descarga directa](https://www.inegi.org.mx/app/mapa/denue/) |
 | SHF | Índice de Precios de Vivienda ZMG | [gob.mx/shf](https://www.gob.mx/shf) |
 
 ---
