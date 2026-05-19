@@ -118,7 +118,7 @@ def generate():
         story.append(Image(DASHBOARD_IMG, width=16*cm, height=9*cm))
     story.append(Spacer(1, 0.3*cm))
     story.append(Paragraph(
-        "Emmanuel · Data Science Portfolio · GitHub: emmysouza11-DC · Guadalajara, Jalisco · 2025",
+        "Emmanuel Souza · Data Science Portfolio · GitHub: emmysouza11-DC · Guadalajara, Jalisco · 2025",
         styles["footer"]))
 
     # PÁGINA 2
@@ -173,7 +173,7 @@ def generate():
         "Proyecto de portafolio profesional en Data Science · Datos públicos · Uso educativo y de investigación",
         styles["footer"]))
     story.append(Paragraph(
-        "Emmanuel · GitHub: emmysouza11-DC · Guadalajara, Jalisco · 2025",
+        "Emmanuel Souza · GitHub: emmysouza11-DC · Guadalajara, Jalisco · 2025",
         styles["footer"]))
 
     doc.build(story)

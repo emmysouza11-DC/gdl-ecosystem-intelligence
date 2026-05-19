@@ -122,7 +122,7 @@ Cada notebook corre de principio a fin con un solo **Run All**.
 
 ## Autor
 
-**Emmanuel** · Data Science Portfolio
+**Emmanuel Souza** · Data Science Portfolio
 [GitHub](https://github.com/emmysouza11-DC) · Guadalajara, Jalisco · 2025
 
 ---
