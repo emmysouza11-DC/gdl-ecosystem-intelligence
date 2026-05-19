@@ -20,10 +20,10 @@ GRIS_CLARO = colors.HexColor("#F5F5F5")
 def build_styles():
     styles = getSampleStyleSheet()
     custom = {
-        "titulo": ParagraphStyle("titulo", fontSize=20, textColor=AZUL_MARINO,
-                                  alignment=TA_CENTER, spaceAfter=4, fontName="Helvetica-Bold"),
-        "subtitulo": ParagraphStyle("subtitulo", fontSize=12, textColor=AZUL_CLARO,
-                                     alignment=TA_CENTER, spaceAfter=6, fontName="Helvetica"),
+        "titulo": ParagraphStyle("titulo", fontSize=16, textColor=AZUL_MARINO,
+                                  alignment=TA_CENTER, spaceAfter=2, fontName="Helvetica-Bold"),
+        "subtitulo": ParagraphStyle("subtitulo", fontSize=10, textColor=AZUL_CLARO,
+                                     alignment=TA_CENTER, spaceAfter=4, fontName="Helvetica"),
         "seccion": ParagraphStyle("seccion", fontSize=11, textColor=AZUL_MARINO,
                                    spaceBefore=12, spaceAfter=4, fontName="Helvetica-Bold"),
         "body": ParagraphStyle("body", fontSize=9, textColor=colors.black,
@@ -95,13 +95,13 @@ def generate():
     styles = build_styles()
     doc = SimpleDocTemplate(OUTPUT_PATH, pagesize=A4,
                              leftMargin=2*cm, rightMargin=2*cm,
-                             topMargin=2*cm, bottomMargin=2*cm)
+                             topMargin=1.5*cm, bottomMargin=1.5*cm)
     story = []
 
     # PÁGINA 1
     story.append(Paragraph("GDL Ecosystem Intelligence", styles["titulo"]))
     story.append(Paragraph("Nearshoring, Brecha Salarial y Vivienda en la ZMG · 2023–2025", styles["subtitulo"]))
-    story.append(HRFlowable(width="100%", thickness=2, color=AZUL_MARINO, spaceAfter=10))
+    story.append(HRFlowable(width="100%", thickness=2, color=AZUL_MARINO, spaceAfter=6))
 
     story.append(Paragraph("Pregunta de Investigación", styles["seccion"]))
     story.append(Paragraph(
@@ -125,8 +125,9 @@ def generate():
     from reportlab.platypus import PageBreak
     story.append(PageBreak())
 
-    story.append(Paragraph("GDL Ecosystem Intelligence · Metodología y Conclusiones", styles["titulo"]))
-    story.append(HRFlowable(width="100%", thickness=2, color=AZUL_MARINO, spaceAfter=10))
+    story.append(Paragraph("GDL Ecosystem Intelligence", styles["titulo"]))
+    story.append(Paragraph("Metodología y Conclusiones", styles["subtitulo"]))
+    story.append(HRFlowable(width="100%", thickness=2, color=AZUL_MARINO, spaceAfter=6))
 
     story.append(Paragraph("Stack Tecnológico", styles["seccion"]))
     story.append(build_stack_table())
